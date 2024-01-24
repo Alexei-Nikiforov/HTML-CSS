@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url(./fonts/gilroy-bold.ttf);
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url(./fonts/gilroy-medium.ttf);
+}
+
+@font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url(./fonts/gilroy-semibold.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,24 +23,44 @@
     background: #FFF;
 }
 
+header {
+    display: flex;
+    align-items: center
+}
+
 .logo {
-    margin-top: 40px;
+    padding-top: 40px;
+    padding-left: 375px;
+    display: flex;
+    align-items: center;
 }
 
 .logo__grow {
     color: #000;
-    /* font-family: Gilroy-Bold; */
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+
+    padding-left: 14px;
+}
+
+.logo__Be {
+    color: #F25822;
+    font-family: Gilroy-Bold;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
 }
 
-.logo__Be {
-    color: #F25822;
-    /* font-family: Gilroy-Bold; */
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
+.menu {
+    padding-top: 51px;
+    padding-left: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 25px;
+    width: 533px;
 }
 
 .menu a {
@@ -37,30 +72,54 @@
 
 .menu__link {
     color: #000;
-    /* font-family: Gilroy-Medium; */
+    font-family: Gilroy-Medium;
 }
 
 .menu__link--other_color {
     color: #F25822;
-    /* font-family: Gilroy-SemiBold; */
+    font-family: Gilroy-SemiBold;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 41px;
 }
 
 .text__title {
     color: #000;
-    /* font-family: Gilroy-Bold; */
+    font-family: Gilroy-Bold;
     font-size: 60px;
     font-style: normal;
     font-weight: 400;
-    margin-top: 143px;
+    
+    padding-top: 89px;
+    padding-left: 373px;
+
+    width: 522px;
 }
 
 .text__info {
     color: #888;
-    /* font-family: Gilroy-Medium; */
+    font-family: Gilroy-Medium;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    margin-top: 17px;
+    
+    padding-top: 17px;
+    padding-left: 373px;
+
+    width: 466px;
+}
+
+.button__info {
+    display: flex;
+    flex-direction: row;
+    gap: 72px;
+    align-items: baseline;
+
+    padding-top: 37px;
+    padding-left: 375px;
 }
 
 .button {
@@ -75,7 +134,7 @@
 
 .button__text {
     color: #FFF;
-    /* font-family: Gilroy-Bold; */
+    font-family: Gilroy-Bold;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -83,12 +142,25 @@
 
 .text__video {
     color: #AAA;
-    /* font-family: Gilroy-Bold; */
+    font-family: Gilroy-Bold;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
 }
 
+.img__info {
+    padding-top: 89px;
+}
+
 .brand__logo__panel {
-    margin-top: 260px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 48px;
+
+    padding-top: 259px;
+    padding-left: 345px;
 }
