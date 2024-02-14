@@ -3,114 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Каталог</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Меню</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <p class="h1">Произвольный загаловок</p>
+    </header>
+    <main>
+        <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#item-1">Item 1</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+              </nav>
+              <a class="nav-link" href="#item-2">Item 2</a>
+              <a class="nav-link" href="#item-3">Item 3</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+              </nav>
+            </nav>
+          </nav>
+          
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0">
+            <h4 id="item-1">Item 1</h4>
+            <p>...</p>
+            <h5 id="item-1-1">Item 1-1</h5>
+            <p>...</p>
+            <h5 id="item-1-2">Item 1-2</h5>
+            <p>...</p>
+            <h4 id="item-2">Item 2</h4>
+            <p>...</p>
+            <h4 id="item-3">Item 3</h4>
+            <p>...</p>
+            <h5 id="item-3-1">Item 3-1</h5>
+            <p>...</p>
+            <h5 id="item-3-2">Item 3-2</h5>
+            <p>...</p>
+        </div>
 
-    <!-- Задание 1
-    Работа с псевдоклассами
+        <div id="carouselExampleIndicators" class="carousel slide w-25 carousel-dark" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner ">
+              <div class="carousel-item active">
+                <img src="./img/1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/3.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/4.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
-    Текст задания
-    1.	Дан код 
-    <ul class="menu">
-        <li class="menu__list"><a href="" class="menu__link">list-1</a></li>
-        <li class="menu__list"><a href="" class="menu__link">list-2</a></li>
-        <li class="menu__list"><a href="" class="menu__link">list-3</a></li>
-        <li class="menu__list"><a href="" class="menu__link">list-4</a></li>
-    </ul>
-    2.	При наведении на любую ссылку цвет текста должен стать красным
-    3.	При нажатии на ссылку цвет текста должен стать зеленым в момент нажатия
-    4.	Найти первый элемент списка и добавить нижнее подчеркивание ссылке
-    5.	Найти последний элемент списка и добавить ссылке жирность font-weight: bold
-    6.	У третьей ссылки нужно поменять цвет текста на оранжевый -->
+    </main>
+    <footer></footer>
 
-    <ul class="menu">
-        <li class="menu__list"><a href="" class="menu__link">list-1</a></li>
-        <li class="menu__list"><a href="" class="menu__link">list-2</a></li>
-        <li class="menu__list"><a href="" class="menu__link">list-3</a></li>
-        <li class="menu__list"><a href="" class="menu__link">list-4</a></li>
-    </ul>
-
-    <!-- Задание 2
-    Работа с псевдоэлементами
-
-    Текст задания 
-    1.	Дан код https://codepen.io/alexej-kadochnikow/pen/RwQrvov 
-    2.	Необходимо создать псевдоэлемент new
-    3.	Разместить его в правом верхнем углу блока product чтобы он не смещал другие элементы
-    4.	размеры блока 35 на 35 px
-    5.	цвет фона красный, а цвет текста белый
-    6.	Необходимо создать псевдоэлемент sale
-    7.	Разместить его в левом верхнем углу блока product чтобы он не смещал другие элементы
-    8.	размеры блока 35 на 35 px
-    9.	цвет фона оранжевый, а цвет текста белый -->
-
-    <div class="product">
-      <div class="product__img"></div>
-      <h2 class="product__name">Name product</h2>
-      <p class="product__text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-    </div>
-
-    <!-- Задание 3
-    Работа с svg
-
-    Текст задания 
-    1.	Дан код картинки svg
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 96.03v319.9c0 17.67-14.33 31.1-31.1 31.1C462.3 447.1 448 433.6 448 415.1V284.1l-171.5 156.5C255.9 457.7 224 443.3 224 415.1V284.1l-171.5 156.5C31.88 457.7 0 443.3 0 415.1V96.03c0-27.37 31.88-41.74 52.5-24.62L224 226.8V96.03c0-27.37 31.88-41.74 52.5-24.62L448 226.8V96.03c0-17.67 14.33-31.1 31.1-31.1C497.7 64.03 512 78.36 512 96.03z"/></svg>
-
-    2.	Необходимо добавить эффект наведения на картинку и поменять значение цвета на purple при наведении и yellow при нажатии -->
-
-    <div class="img">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 96.03v319.9c0 17.67-14.33 31.1-31.1 31.1C462.3 447.1 448 433.6 448 415.1V284.1l-171.5 156.5C255.9 457.7 224 443.3 224 415.1V284.1l-171.5 156.5C31.88 457.7 0 443.3 0 415.1V96.03c0-27.37 31.88-41.74 52.5-24.62L224 226.8V96.03c0-27.37 31.88-41.74 52.5-24.62L448 226.8V96.03c0-17.67 14.33-31.1 31.1-31.1C497.7 64.03 512 78.36 512 96.03z"/></svg>
-    </div>
-
-    <!-- Задание 4
-    Работа с трансформацией 
-
-    Текст задания 
-    1.	Дан код https://codepen.io/alexej-kadochnikow/pen/yLveZbg 
-    2.	Необходимо добавить
-        a.	При наведении на первый блок, чтобы он смещался на 50px вправо
-        b.	при наведении на второй блок, он должен становиться в 2 раза больше
-        c.	При наведении на 3 блок, он должен повернуться по часовой стрелке на 60 градусов
-        d.	Все наведения должны быть плавными и выполнять переход за 1 секунду
-        e.	Можно менять параметры ширины и высоты при необходимости -->
-
-    <div class="content">
-        <div class="item item_1">1</div>
-        <div class="item item_2">2</div>
-        <div class="item item_3">3</div>
-    </div>
-    
-    <!-- Задание 5
-    Работа с трансформацией 
-
-    Текст задания 
-    1.	Дан код https://codepen.io/alexej-kadochnikow/pen/MWQKLop 
-    2.	Есть 4 блока, вам необходимо сделать 8 угольник 
-    3.	Для этого вам необходимо подобрать значение высоты
-    4.	Задать значение фона для блоков
-    5.	Повернуть элементы на определённый угол поворота -->
-
-    <div class="contents">
-        <div class="item item_1">1</div>
-        <div class="item item_2">2</div>
-        <div class="item item_3">3</div>
-        <div class="item item_4">4</div>
-    </div>
-
-    <!-- Задание 6
-    Работа с анимацией 
-
-    Текст задания 
-    1.	Дан код https://codepen.io/alexej-kadochnikow/pen/GRQozvb 
-    2.	Необходимо добавить произвольную анимацию на кнопку для этого можно использовать генератор или придумать анимацию самостоятельно  https://animista.net/play/basic/rotate-scale  , если необходимо быстро определиться https://animista.net/play/attention/wobble  -->
-    
-    <div class="buttoms">
-        <div class="button">Купить</div>
-    </div>
-
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
