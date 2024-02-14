@@ -3,108 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>MySite</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Главная</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Каталог</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link">Меню</a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-          <p class="h1">Произвольный загаловок</p>
-    </header>
-    <main>
-        <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <nav class="nav nav-pills flex-column">
-              <a class="nav-link" href="#item-1">Item 1</a>
-              <nav class="nav nav-pills flex-column">
-                <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
-                <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
-              </nav>
-              <a class="nav-link" href="#item-2">Item 2</a>
-              <a class="nav-link" href="#item-3">Item 3</a>
-              <nav class="nav nav-pills flex-column">
-                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
-                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
-              </nav>
+    <div class="main__content">
+        <header>
+            <nav class="menu">
+                <a class="menu__link--other_color" href="#">Home</a>
+                <a class="menu__link" href="#">About</a>
+                <a class="menu__link" href="#">Services</a>
+                <a class="menu__link" href="#">Blog</a>
+                <a class="menu__link" href="#">Contact</a>
             </nav>
-          </nav>
-          
-        <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0">
-            <h4 id="item-1">Item 1</h4>
-            <p>...</p>
-            <h5 id="item-1-1">Item 1-1</h5>
-            <p>...</p>
-            <h5 id="item-1-2">Item 1-2</h5>
-            <p>...</p>
-            <h4 id="item-2">Item 2</h4>
-            <p>...</p>
-            <h4 id="item-3">Item 3</h4>
-            <p>...</p>
-            <h5 id="item-3-1">Item 3-1</h5>
-            <p>...</p>
-            <h5 id="item-3-2">Item 3-2</h5>
-            <p>...</p>
-        </div>
-
-        <div id="carouselExampleIndicators" class="carousel slide w-25 carousel-dark" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </header>
+        <main>
+            <div class="main__info">
+                <div class="text__info">
+                    <div class="sm__title">
+                        Next genaretion platform
+                    </div>
+                    <div class="main__title">
+                        Artificial intelligence & Syber security
+                    </div>
+                    <div class="text__main__page">
+                        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                    </div>
+                    <div class="button__panel__main__page">
+                        <button>Get Started</button>
+                        <button>
+                            <span class="btn__w__v">
+                            <img src="./img/play.svg" alt="play">Watch Video
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="img__info">
+                    <img src="./img/main_img.svg" alt="main">
+                </div>
             </div>
-            <div class="carousel-inner ">
-              <div class="carousel-item active">
-                <img src="./img/1.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./img/2.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./img/3.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./img/4.png" class="d-block w-100" alt="...">
-              </div>
+            <div class="logos__panel">
+                <a href="#"><img src="./img/Group_400.svg" alt="400"></a>
+                <a href="#"><img src="./img/Group_401.svg" alt="401"></a>
+                <a href="#"><img src="./img/Group_402.svg" alt="402"></a>
+                <a href="#"><img src="./img/Group_403.svg" alt="403"></a>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-    </main>
-    <footer></footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+            <div class="apply">
+                <div class="apply__img">
+                    <img src="./img/about_4.svg" alt="apply">
+                </div>
+                <div class="apply__text">
+                    <div class="apply__text__1">
+                        Apply AI, Deep Learning and Data Sciece to solve
+                    </div>
+                    <div class="apply__text__2">
+                        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                    </div>
+                    <div class="apply__button">
+                        <button>Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="future">
+                <div class="future__410">
+                    <div class="future__410__img">
+                        <img src="./img/welcome-3_1.svg" alt="img_future_410">
+                    </div>
+                    <div class="future__410__text__1">
+                        Expert Prespective Agency Awards
+                    </div>
+                    <div class="future__410__text__2">
+                        Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups.
+                    </div>
+                </div>
+                <div class="future__410">
+                    <div class="future__410__img">
+                        <img src="./img/welcome-3_2.svg" alt="img_future_410">
+                    </div>
+                    <div class="future__410__text__1">
+                        Business Prespective Global Agency Awards
+                    </div>
+                    <div class="future__410__text__2">
+                        Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups.
+                    </div>
+                </div>
+                <div class="future__410">
+                    <div class="future__410__img">
+                        <img src="./img/welcome-3_3.svg" alt="img_future_410">
+                    </div>
+                    <div class="future__410__text__1">
+                        Value for Results in Global Agency Awards
+                    </div>
+                    <div class="future__410__text__2">
+                        Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups.
+                    </div>
+                </div>
+            </div>
+            <div class="perspective">
+                <div class="perspective__1">
+                    <div class="future__411">
+                        <div class="future__411__img">
+                            <img src="./img/welcome-3_4.svg" alt="img_future_410">
+                        </div>
+                        <div class="future__411__text__1">
+                            In print, and publishing industries for previewing layouts and visual mockups.
+                        </div>
+                        <div class="future__411__text__2">
+                            Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups.
+                        </div>
+                    </div>
+                </div>
+                <div class="perspective__2">
+                    <div class="future__410">
+                        <div class="future__410__img">
+                            <img src="./img/welcome-3_5.svg" alt="img_future_410">
+                        </div>
+                        <div class="future__410__text__1">
+                            Value for Results in Global Agency Awards
+                        </div>
+                        <div class="future__410__text__2">
+                            Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups.
+                        </div>
+                    </div>    
+                    <div class="future__410">
+                        <div class="future__410__img">
+                            <img src="./img/welcome-3_6.svg" alt="img_future_410">
+                        </div>
+                        <div class="future__410__text__1">
+                            Value for Results in Global Agency Awards
+                        </div>
+                        <div class="future__410__text__2">
+                            Lorem ipsum is placeholder text commonly used inprint, and publishing industries for previewing layouts and visual mockups.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about">
+                <div class="about__text">
+                    <div class="about__text__1">
+                        What our clients say about our awesome solutions
+                    </div>
+                    <div class="about__text__2">
+                        To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it who do not know.
+                    </div>
+                    <div class="about__text__2">
+                        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing .
+                    </div>
+                    <div class="about__text__2">
+                        Lorem ipsum is placeholder previewing layouts and visual mockups.
+                    </div>
+                    <div class="about__text__2">
+                        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                    </div>
+                </div>
+                <div class="about__img">
+                    <img src="./img/about_3_1.svg" alt="about__img">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer__menu">
+                <div id="a">
+                    <div class="footer__information">
+                        <div class="footer__information__text">
+                            INFORMATION
+                        </div>
+                        <div class="footer__information__adress">
+                            <div class="footer__information__info">
+                                <div class="footer__information__img">
+                                    <img src="./img/Group_1000.svg" alt="img_email">
+                                </div>
+                                <div class="footer__information__texts">
+                                    Company@gmail.com.com
+                                </div>
+                            </div>
+                            <div class="footer__information__info">
+                                <div class="footer__information__img">
+                                    <img src="./img/Group_1001.svg" alt="img_phone">
+                                </div>
+                                <div class="footer__information__texts">
+                                    Phone: (064) 332-1233
+                                </div>
+                            </div>
+                            <div class="footer__information__info">
+                                <div class="footer__information__img">
+                                    <img src="./img/Group_1002.svg" alt="img_adress">
+                                </div>
+                                <div class="footer__information__texts">
+                                    450 Wall Street, USA, New York
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="b">
+                    <div class="footer__information">
+                        <div class="footer__information__about">
+                            <div class="footer__information__text">
+                                ABOUT THE STORE
+                            </div>
+                            <div class="footer__information__text__1">
+                                Lorem ipsum is placeholder text commonly used in the graphic, print, and layouts and visual mockups.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="c">
+                    <div class="footer__information">
+                        <div class="footer__information__about__2">
+                            <div class="footer__information__text">
+                                <p>ABOUT THE STORE</p>
+                            </div>
+                            <div class="footer__information__text__2">
+                                www.company.com
+                            </div>
+                            <div class="footer__information__img">
+                                <a href="#">
+                                    <img src="./img/Group_1003.svg" alt="img_twiter">
+                                </a>
+                                <a href="#">
+                                    <img src="./img/Group_1004.svg" alt="img_LinkedIn">
+                                </a>
+                                <a href="#">
+                                    <img src="./img/Group_1005.svg" alt="img_utube">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
